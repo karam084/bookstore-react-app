@@ -2,10 +2,10 @@ import {
   BrowserRouter as Router, Routes,
   Route,
 } from 'react-router-dom';
-import Navbar from './components/Navbar.jsx';
-import Books from './components/Books.jsx';
-import Category from './components/Categories.jsx';
-import Form from './components/Form.jsx';
+import Navbar from './components/Navbar';
+import Books from './components/Books';
+import Category from './components/Categories';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -21,5 +21,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

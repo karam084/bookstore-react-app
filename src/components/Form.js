@@ -4,9 +4,9 @@ const Form = () => (
     <form className="form">
       <input type="text" name="book" placeholder="Book" className="book" />
       <input type="text" name="author" placeholder="Author" className="author" />
-      <button type="submit button" value="Add" className="submit">Add Book</button>
+      <button type="submit" value="Add" className="submit">Add Book</button>
     </form>
-    </>
-  );
-  
-  export default Form;
+  </>
+);
+
+export default Form;
