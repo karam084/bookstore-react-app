@@ -5,13 +5,14 @@ const Book = () => (
           <span>Action</span>
           <h1>The hunger games</h1>
           <p>Unseen Content</p>
-          <ul>
-            <li>Comment</li>
-            <li>Remove</li>
-            <li>Edite</li>
-          </ul>
-        </div>
-  
+          <div class="action-buttons"><button class="button-outline" type="button">Comments</button>
+          <div class="vertical-divider"></div>
+          <button class="button-outline" type="button">Remove</button>
+          <div class="vertical-divider"></div>
+          <button class="button-outline" type="button">Edit</button>
+          </div> 
+          </div>
+
         <div className="progress">
           <h4>60%</h4>
         </div>
@@ -27,11 +28,12 @@ const Book = () => (
           <span>Action</span>
           <h1>The hunger games</h1>
           <p>Unseen Content</p>
-          <ul>
-            <li>Comment</li>
-            <li>Remove</li>
-            <li>Edite</li>
-          </ul>
+          <div class="action-buttons"><button class="button-outline" type="button">Comments</button>
+          <div class="vertical-divider"></div>
+          <button class="button-outline" type="button">Remove</button>
+          <div class="vertical-divider"></div>
+          <button class="button-outline" type="button">Edit</button>
+          </div> 
         </div>
   
         <div className="progress">
@@ -43,7 +45,6 @@ const Book = () => (
           <button type="button">UPDATE PROGRESS</button>
         </div>
       </div>
-  
     </>
   );
   
