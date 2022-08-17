@@ -11,6 +11,8 @@
 - linters
 - webpack
 - React
+- Redux
+
 
 ## Getting Started
 
