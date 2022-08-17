@@ -3,25 +3,21 @@ const REMOVEBOOOK = 'bookstore-react-ap/books/REMOVEBOOK';
 
 const booksReducer = (state = [], action) => {
     switch (action.type) {
-        // do reducer stuff
         case 'ADDBOOK':
-            return [state, {
-                id: action.id,
-                title: action.title,
-                author: action.author,
-            }];
+            return [
+                state,
+                action.payload,
+            ];
         case 'REMOVEBOOOK':
             return state.filter((book) => book.id !== action.id);
 
         default: return state;
     }
 }
-export const addBook = (bookTitle, bookAuthor, bookId) => {
+export const addBook = (book) => {
     const book = {
         type: ADDBOOK,
-        title: bookTitle,
-        author: bookAuthor,
-        id: bookId,
+        payload: book
     };
     return book;
 };
@@ -29,7 +25,7 @@ export const addBook = (bookTitle, bookAuthor, bookId) => {
 export const removeBook = (bookId) => {
     const removedBook = {
         type: REMOVEBOOOK,
-        id: bookId,
+        playLoad: bookId,
     };
     return removedBook;
 };
