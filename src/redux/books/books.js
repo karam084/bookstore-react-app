@@ -1,34 +1,35 @@
-const ADDBOOK = 'bookstore-react-ap/books/ADDBOOK';
-const REMOVEBOOOK = 'bookstore-react-ap/books/REMOVEBOOK';
+const ADDBOOK = 'bookstore/books/ADDBOOK';
+const REMOVEBOOOK = 'bookstore/books/REMOVEBOOK';
 
-let initState = [{
-  title: "Book",
-  author: "Author",
-  id: 1
-},
-{
-  title: "Book2",
-  author: "Author2",
-  id: 2
-},
-{
-  title: "Book3",
-  author: "Author3",
-  id: 3
-}
-]
+const initState = [
+  {
+    title: 'Book',
+    author: 'Author',
+    id: 1,
+  },
+  {
+    title: 'Book2',
+    author: 'Author2',
+    id: 2,
+  },
+  {
+    title: 'Book3',
+    author: 'Author3',
+    id: 3,
+  },
+];
 const booksReducer = (state = initState, action) => {
   switch (action.type) {
-    case 'ADDBOOK':
+    case ADDBOOK:
       return [
-        state,
+        ...state,
         {
           title: action.title,
           author: action.author,
           id: action.id,
-
-        }];
-    case 'REMOVEBOOOK':
+        },
+      ];
+    case REMOVEBOOOK:
       return state.filter((book) => book.id !== action.id);
 
     default:
@@ -40,14 +41,14 @@ export const addBook = (bookTitle, bookAuthor, bookId) => {
     type: ADDBOOK,
     title: bookTitle,
     author: bookAuthor,
-    id: bookId
+    id: bookId,
   };
   return book;
 };
-export const removeBook = payload => {
+export const removeBook = (bookId) => {
   const removedBook = {
     type: REMOVEBOOOK,
-    id: bookId
+    id: bookId,
   };
   return removedBook;
 };

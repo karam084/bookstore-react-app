@@ -9,7 +9,7 @@ const Category = () => {
       <button onClick={() => dispatch(CheckStatus())} type="button">Check status</button>
       <p>{response}</p>
     </div>
-  )
+  );
 };
 
 export default Category;
