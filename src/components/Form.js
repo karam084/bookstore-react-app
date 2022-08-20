@@ -17,7 +17,7 @@ const Form = () => {
         <button className="submit" type="button" onClick={() => dispatch(addBook(title.current.value, author.current.value, uniqid()))}>Add Book</button>
       </form>
     </>
-  )
+  );
 };
 
 export default Form;
