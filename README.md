@@ -12,7 +12,7 @@
 - webpack
 - React
 - Redux
-
+- API
 
 ## Getting Started
 
