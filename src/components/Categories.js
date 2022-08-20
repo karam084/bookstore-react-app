@@ -6,7 +6,7 @@ const Category = () => {
   const dispatch = useDispatch();
   return (
     <div>
-      <button onClick={() => dispatch(CheckStatus())} type="button">Check status</button>
+      <button type="button" onClick={() => dispatch(CheckStatus())}>Check status</button>
       <p>{response}</p>
     </div>
   );
