@@ -33,32 +33,35 @@ const Form = () => {
   };
 
   return (
-    <form className="forms" onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="title"
-        onChange={handle}
-        value={state.title}
-        className="book"
-        placeholder="Book Title"
-      />
-      <input
-        type="text"
-        name="author"
-        onChange={handle}
-        value={state.author}
-        className="author"
-        placeholder="Book Author"
-      />
-      <select value={state.category} name="category" onChange={handleChanges}>
-        <option value="History">History</option>
-        <option value="Romance">Romance</option>
-        <option value="Mystery">Mystery</option>
-        <option value="Science">Science</option>
-        <option value="Technology">Technology</option>
-      </select>
-      <button type="submit">ADD BOOK</button>
-    </form>
+    <>
+      <div><h1 className="addNew">ADD NEW B00K</h1></div>
+      <form className="forms" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="title"
+          onChange={handle}
+          value={state.title}
+          className="book"
+          placeholder="Book Title"
+        />
+        <input
+          type="text"
+          name="author"
+          onChange={handle}
+          value={state.author}
+          className="author"
+          placeholder="Book Author"
+        />
+        <select value={state.category} name="category" onChange={handleChanges}>
+          <option value="History">History</option>
+          <option value="Romance">Romance</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Science">Science</option>
+          <option value="Technology">Technology</option>
+        </select>
+        <button type="submit">ADD BOOK</button>
+      </form>
+    </>
   );
 };
 
