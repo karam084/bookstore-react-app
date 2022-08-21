@@ -39,7 +39,9 @@ const Book = () => {
             textStyle={{ fill: '#0290ff' }}
           />
         </div>
-        <div className="completed">Completed</div>
+        <div className="completed">
+          Completed
+        </div>
       </div>
       <div className="chapter">
         <h4>CURRENT CHAPTER</h4>

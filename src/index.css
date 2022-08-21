@@ -74,3 +74,7 @@ button {
 input {
   padding: 0.4rem;
 }
+
+nav h1 {
+  color: #0290ff;
+}
